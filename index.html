@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AgroMart</title>
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/5.15.3/css/all.min.css">
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header>
+            <div class="header-1" style="background-color: rgba(247,255,236,255);">
+                <img src="AgroMart.png" style="width: 100px; height: 100px; margin-right: 20px;">
+                <a href="agrimart.html" class="logo" style="padding-right: 1800px; font-size: 50px;" >AgroMart</a>            
+            </div>
+            <div class="header-2">
+                <div id="menu-bar" class="fas fa-bars"></div>
+                <nav class="navbar">
+                    <a href="#home">home</a>
+                    <a href="#category">category</a>
+                    <a href="#product">Offers</a>
+                    <!-- <a href="feedback.html" style="margin-left: 86rem;">Feedback</a> -->
+
+                </nav>
+            </div>
+        </header>
+        <section class="home" id="home">
+            <div class="image">
+                <img src="agriculture.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>ONE PLACE FOR ALL YOUR AGRICULTURAL NEEDS</h3>
+            </div>
+        </section>
+        <section class="banner-container">
+            <div class="banner">
+                <img src="nano-spary-machine-250x250.png" alt="nano-spary-machine-250x250.png">
+                <div class="content">
+                    <h3>special offer</h3>
+                    <p>upto 38% off</p>
+                    <a href="equipments.html" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="download.png" alt="download.png">
+                <div class="content">
+                    <div style="background-color: white;">
+                        <h3>limited offer</h3>
+                        <p>upto 69% off</p>
+                    </div>
+                    <a href="growthpromoters.html" class="btn">check out</a>
+                </div>
+            </div>
+        </section>
+        <!-- banner section ends -->
+        <!-- category section starts -->
+        <section class="category" id="category">
+            <h1 class="heading" style=" color: black;">shop by <span style="color: #88c431;">category</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <h3>Seeds</h3>
+                    <p>upto 31% off</p>
+                    <img src="Seeds_Abhilash_-Indus-27_720x.png" alt="Seeds_Abhilash_-Indus-27_720x.png">
+                    <a href="seeds.html" class="btn">shop now</a>
+                </div>
+                <div class="box">
+                    <h3>Equipments</h3>
+                    <p>upto 38% off</p>
+                    <img src="Circle-Implements-204_720x.png" alt="Circle-Implements-204_720x.png">
+                    <a href="equipments.html" class="btn">shop now</a>
+                </div>
+                <div class="box">
+                    <h3>Insecticides</h3>
+                    <p>upto 35% off</p>
+                    <img src="Insecticides_Phoskill_-Benivia_720x.jpg" alt="Insecticides_Phoskill_-Benivia_720x.jpg">
+                    <a href="insectiside.html" class="btn">shop now</a>
+                </div>
+                <div class="box">
+                    <h2>Growth Promoters</h2>
+                    <p>upto 69% off</p>
+                    <img src="Growth-Promoters_TAPAS-GROWTH-BOOSTER_-ISABION_720x.png" 
+                    alt="Growth-Promoters_TAPAS-GROWTH-BOOSTER_-ISABION_720x.png">
+                    <a href="growthpromoters.html" class="btn">shop now</a>
+                </div>
+            </div>
+        </section>
+        <!-- category section ends -->
+        <!-- product section starts -->    
+        <section class="product" id="product">
+            <h1 class="heading">Today's <span>Offers</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">53% OFF</span>
+                    <img src="2_7e619435-f0e8-4512-be7d-6c595de28bd6_1800x1800.png" alt="2_7e619435-f0e8-4512-be7d-6c595de28bd6_1800x1800.png">
+                    <h3 id="a5_n">Tapas Double Pump Motor</h3>
+                    <div class="price">₹<b id="a5_p">2999</b> <span> ₹6500 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" id="a5_q" min="1" max="1000" value="1">
+                        <span> Units </span>
+                    </div>
+                        <button onclick="show('a5_q','a5_n','a5_p')" class="btn">add to cart</button>
+                    </div>
+                <div class="box">
+                    <span class="discount">1% OFF</span>
+                    <img src="TRACER-INSECTICIDE_1800x1800.png" alt="TRACER-INSECTICIDE_1800x1800.png">
+                    <h3 id=b5_n>Tracer Insectiside</h3>
+                    <div class="price">₹<b id="b5_p">1920</b> <span> ₹1950 </span> </div>
+                    <div class="quantity">
+                    <span>quantity : </span>
+                        <input type="number" id="b5_q" min="1" max="1000" value="1">
+                        <span> Bottles </span>
+                    </div>
+                    <button onclick="show('b5_q','b5_n','b5_p')" class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">28% OFF</span>
+                    <img src="WhatsAppImage2021-07-30at5.35.36PM_1800x1800.png" alt="WhatsAppImage2021-07-30at5.35.36PM_1800x1800.png">
+                    <h3 id=c5_n>Hectare Hand Weeder</h3>
+                    <div class="price">₹<b id="c5_p">499</b> <span> ₹699 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="c5_q" type="number" min="1" max="1000" value="1">
+                        <span> Units </span>
+                    </div>
+                    <button onclick="show('c5_q','c5_n','c5_p')"class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">12% OFF</span>
+                    <img src="Dow_Agro_Delegate_Insecticide_1800x1800.png" alt="Dow_Agro_Delegate_Insecticide_1800x1800.png">
+                    <h3 id=d5_n>Delegate Insecticide</h3>
+                    <div class="price">₹<b id="d5_p">1294 </b> <span>  ₹1476 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                            <input id="d5_q" type="number" min="1" max="1000" value="1">
+                        <span> Bottles </span>
+                    </div>
+                    <button onclick="show('d5_q','d5_n','d5_p')" class="btn">add to cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <h1 class="credit">Created By Sahil Suryawanshi And Sanket Pawar !!!!                    
+            </h1>
+        </section>
+        <!-- footer section ends -->
+        <script> 
+        function show(Q,N,P,t) {
+            var q = document.getElementById(Q).value;
+            var n = document.getElementById(N).innerHTML;
+            var p = document.getElementById(P).innerHTML;
+            var t = q*p;
+            alert("Your order has been successfully received of "+q+" "+n+". Your total is: "+t);
+            }
+        </script>
+    <!-- custom js file link -->
+    </body>
+</html>

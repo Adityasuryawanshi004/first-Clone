@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>AgroMart Seeds</title>
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/5.15.3/css/all.min.css">
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-1" style="background-color: rgba(247,255,236,255);">
+                <img src="AgroMart.png" style="width: 100px; height: 100px; margin-right: 20px;">
+                <a href="agrimart.html" class="logo" style="padding-right: 1800px; font-size: 50px;" >AgroMart</a>
+            </div>
+            <div class="header-2">
+                <div id="menu-bar" class="fas fa-bars"></div>
+                <nav class="navbar">
+                    <a href="agrimart.html">home</a>
+                    <a href="seeds.html" style="color:#88c431">Seeds</a>
+                    <a href="equipments.html">Equipments</a>
+                    <a href="insectiside.html" >Insectisides</a>
+                    <a href="growthpromoters.html">Growth Promoters</a>
+
+
+                </nav>
+            </div>
+        </header>
+        <section class="product" id="product">
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">20% OFF</span>
+                    <img src="INDRA-CAPSICUM_71d8d4e9-1d03-40f2-82ca-1a1a95c23d24_800x.png" alt="INDRA-CAPSICUM_71d8d4e9-1d03-40f2-82ca-1a1a95c23d24_800x.png">
+                    <h3 id="e5_n">Syngenta Indra Capsicum Seeds</h3>
+                    <div class="price">₹<b id="e5_p">1910</b> <span> ₹2410 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" id="e5_q" min="1" max="1000" value="1">
+                        <span> Bags </span>
+                    </div>
+                        <button onclick="show('e5_q','e5_n','e5_p')" class="btn">add to cart</button>
+                    </div>
+                <div class="box">
+                    <span class="discount">31% OFF</span>
+                    <img src="GS-10-PEAS_84cb851d-9a80-4cf7-9bfa-59eb74aed995_800x.png" alt="GS-10-PEAS_84cb851d-9a80-4cf7-9bfa-59eb74aed995_800x.png">
+                    <h3 id=f5_n>GS-10 Pea Seed</h3>
+                    <div class="price">₹<b id="f5_p">330</b> <span> ₹ 480 </span> </div>
+                    <div class="quantity">
+                    <span>quantity : </span>
+                        <input type="number" id="f5_q" min="1" max="1000" value="1">
+                        <span> Bags </span>
+                    </div>
+                    <button onclick="show('f5_q','f5_n','f5_p')" class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">31% OFF</span>
+                    <img src="ABHILASH-TOMATO_800x.png" alt="ABHILASH-TOMATO_800x.png">
+                    <h3 id=g5_n>Abhilash Tomato Seeds</h3>
+                    <div class="price">₹<b id="g5_p">469</b> <span> ₹ 686 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="g5_q" type="number" min="1" max="1000" value="1">
+                        <span> Bags </span>
+                    </div>
+                    <button onclick="show('g5_q','g5_n','g5_p')"class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">25% OFF</span>
+                    <img src="Untitleddesign_14_fed908ba-a9ca-4b27-bf42-a8d9675e090a_800x.png" alt="Untitleddesign_14_fed908ba-a9ca-4b27-bf42-a8d9675e090a_800x.png">
+                    <h3 id=q5_n>Surabhi Coriander</h3>
+                    <div class="price">₹<b id="q5_p">160</b> <span> ₹ 216 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="q5_q" type="number" min="1" max="1000" value="1">
+                        <span> Bags </span>
+                    </div>
+                    <button onclick="show('q5_q','q5_n','q5_p')"class="btn">add to cart</button>
+                </div>
+        </section>
+    </section>
+    <section class="footer">
+        <h1 class="credit"> created by Group No. 8 | Guided by Yogesh Bodhe Sir!                    
+        </h1>
+    </section>
+
+        <script> 
+            function show(Q,N,P,t) {
+                var q = document.getElementById(Q).value;
+                var n = document.getElementById(N).innerHTML;
+                var p = document.getElementById(P).innerHTML;
+                var t = q*p;
+                alert("Your order has been successfully received of "+q+" "+n+". Your total is: "+t);
+                }
+            </script>
+    
+    </body>
+</html>

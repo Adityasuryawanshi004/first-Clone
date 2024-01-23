@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>AgroMart Insectisides</title>
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/5.15.3/css/all.min.css">
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-1" style="background-color: rgba(247,255,236,255);">
+                <img src="AgroMart.png" style="width: 100px; height: 100px; margin-right: 20px;">
+                <a href="agrimart.html" class="logo" style="padding-right: 1800px; font-size: 50px;" >AgroMart</a>
+            </div>
+            <div class="header-2">
+                <div id="menu-bar" class="fas fa-bars"></div>
+                <nav class="navbar">
+                    <a href="agrimart.html">home</a>
+                    <a href="seeds.html" >Seeds</a>
+                    <a href="equipments.html" >Equipments</a>
+                    <a href="insectiside.html" style="color:#88c431">Insectisides</a>
+                    <a href="growthpromoters.html">Growth Promoters</a>
+
+
+
+                </nav>
+            </div>
+        </header>
+        <section class="product" id="product">
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">35% OFF</span>
+                    <img src="Syngenta_Alika_Insecticide_800x.png" alt="Syngenta_Alika_Insecticide_800x.png">
+                    <h3 id="k5_n">Alika Insecticide</h3>
+                    <div class="price">₹<b id="k5_p">147</b> <span> ₹ 229 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" id="k5_q" min="1" max="1000" value="1">
+                        <span> Bottles </span>
+                    </div>
+                        <button onclick="show('k5_q','k5_n','k5_p')" class="btn">add to cart</button>
+                    </div>
+                <div class="box">
+                    <span class="discount">20% OFF</span>
+                    <img src="FMC_Benevia_800x.png" alt="FMC_Benevia_800x.png">
+                    <h3 id=i5_n>Benevia insectiside</h3>
+                    <div class="price">₹<b id="i5_p">835</b> <span> ₹ 1044 </span> </div>
+                    <div class="quantity">
+                    <span>quantity : </span>
+                        <input type="number" id="i5_q" min="1" max="1000" value="1">
+                        <span> Units </span>
+                    </div>
+                    <button onclick="show('i5_q','i5_n','i5_p')" class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">27% OFF</span>
+                    <img src="TAFGOR-INSECTICIDE_800x.png" alt="TAFGOR-INSECTICIDE_800x.png">
+                    <h3 id=l5_n>Tfgor Insecticide</h3>
+                    <div class="price">₹<b id="l5_p">2700</b> <span> ₹ 3499 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="l5_q" type="number" min="1" max="1000" value="1">
+                        <span> Units </span>
+                    </div>
+                    <button onclick="show('l5_q','l5_n','l5_p')"class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">17% OFF</span>
+                    <img src="Alanto_375a36a9-ae0b-4868-9bba-a69762b034f4_1800x1800.png" alt="Alanto_375a36a9-ae0b-4868-9bba-a69762b034f4_1800x1800.png">
+                    <h3 id=m5_n>Alanto Insectisides</h3>
+                    <div class="price">₹<b id="m5_p">335</b> <span> ₹ 405 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="m5_q" type="number" min="1" max="1000" value="1">
+                        <span> Bottles </span>
+                    </div>
+                    <button onclick="show('m5_q','m5_n','m5_p')"class="btn">add to cart</button>
+                </div>
+        </section>
+    </section>
+    <section class="footer">
+        <h1 class="credit"> created by Group No. 8 | Guided by Yogesh Bodhe Sir!                    
+        </h1>
+    </section>
+
+        <script> 
+            function show(Q,N,P,t) {
+                var q = document.getElementById(Q).value;
+                var n = document.getElementById(N).innerHTML;
+                var p = document.getElementById(P).innerHTML;
+                var t = q*p;
+                alert("Your order has been successfully received of "+q+" "+n+". Your total is: "+t);
+                }
+            </script>
+    
+    </body>
+</html>

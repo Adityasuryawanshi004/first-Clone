@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>AgroMart Equipments</title>
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/5.15.3/css/all.min.css">
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-1" style="background-color: rgba(247,255,236,255);">
+                <img src="AgroMart.png" style="width: 100px; height: 100px; margin-right: 20px;">
+                <a href="agrimart.html" class="logo" style="padding-right: 1800px; font-size: 50px;" >AgroMart</a>
+            </div>
+            <div class="header-2">
+                <div id="menu-bar" class="fas fa-bars"></div>
+                <nav class="navbar">
+                    <a href="agrimart.html">home</a>
+                    <a href="seeds.html" >Seeds</a>
+                    <a href="equipments.html" style="color:#88c431">Equipments</a>
+                    <a href="insectiside.html" >Insectisides</a>
+                    <a href="growthpromoters.html">Growth Promoters</a>
+
+
+                </nav>
+            </div>
+        </header>
+        <section class="product" id="product">
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">0% OFF</span>
+                    <img src="31zIKUkF7TL_800x.png" alt="31zIKUkF7TL_800x.png">
+                    <h3 id="h5_n">Multi Star Bow Rake</h3>
+                    <div class="price">₹<b id="h5_p">1090</b> <span> ₹ 1099 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" id="h5_q" min="1" max="1000" value="1">
+                        <span> Units </span>
+                    </div>
+                        <button onclick="show('h5_q','h5_n','h5_p')" class="btn">add to cart</button>
+                    </div>
+                <div class="box">
+                    <span class="discount">34% OFF</span>
+                    <img src="300x300_800x.png" alt="300x300_800x.png">
+                    <h3 id=i5_n>Tapas Farmer Safety Kit</h3>
+                    <div class="price">₹<b id="i5_p">559</b> <span> ₹ 850 </span> </div>
+                    <div class="quantity">
+                    <span>quantity : </span>
+                        <input type="number" id="i5_q" min="1" max="1000" value="1">
+                        <span> Units </span>
+                    </div>
+                    <button onclick="show('i5_q','i5_n','i5_p')" class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">22% OFF</span>
+                    <img src="transplanter2_800x.png" alt="transplanter2_800x.png">
+                    <h3 id=j5_n>Vegetable Flowers AND BUD TRANSPLANTER</h3>
+                    <div class="price">₹<b id="j5_p">2700</b> <span> ₹ 3499 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="j5_q" type="number" min="1" max="1000" value="1">
+                        <span> Units </span>
+                    </div>
+                    <button onclick="show('j5_q','j5_n','j5_p')"class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">38% OFF</span>
+                    <img src="hand-tractor_800x.png" alt="hand-tractor_800x.png">
+                    <h3 id=j5_n>Hand Tractor</h3>
+                    <div class="price">₹<b id="j5_p">4299</b> <span> ₹ 6999 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="j5_q" type="number" min="1" max="1000" value="1">
+                        <span> Bags </span>
+                    </div>
+                    <button onclick="show('j5_q','j5_n','j5_p')"class="btn">add to cart</button>
+                </div>
+        </section>
+    </section>
+    <section class="footer">
+        <h1 class="credit"> created by Sahil Suryawanshi & | Sanket Pawar!!!!                    
+        </h1>
+    </section>
+
+        <script> 
+            function show(Q,N,P,t) {
+                var q = document.getElementById(Q).value;
+                var n = document.getElementById(N).innerHTML;
+                var p = document.getElementById(P).innerHTML;
+                var t = q*p;
+                alert("Your order has been successfully received of "+q+" "+n+". Your total is: "+t);
+                }
+            </script>
+    
+    </body>
+</html>

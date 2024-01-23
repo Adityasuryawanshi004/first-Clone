@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>AgroMart Seeds</title>
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font- awesome/5.15.3/css/all.min.css">
+        <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-1" style="background-color: rgba(247,255,236,255);">
+                <img src="AgroMart.png" style="width: 100px; height: 100px; margin-right: 20px;">
+                <a href="agrimart.html" class="logo" style="padding-right: 1800px; font-size: 50px;" >AgroMart</a>
+            </div>
+            <div class="header-2">
+                <div id="menu-bar" class="fas fa-bars"></div>
+                <nav class="navbar">
+                    <a href="agrimart.html">home</a>
+                    <a href="seeds.html">Seeds</a>
+                    <a href="equipments.html">Equipments</a>
+                    <a href="insectiside.html" >Insectisides</a>
+                    <a href="growthpromoters.html"  style="color:#88c431">Growth Promoters</a>
+
+                </nav>
+            </div>
+        </header>
+        <section class="product" id="product">
+            <div class="box-container">
+                <div class="box">
+                    <span class="discount">26% OFF</span>
+                    <img src="BIOVITA-BIO-FERTILIZER_998f6a0f-a964-4eaa-9985-10c31ffd6984_1800x1800.png" alt="BIOVITA-BIO-FERTILIZER_998f6a0f-a964-4eaa-9985-10c31ffd6984_1800x1800.png">
+                    <h3 id="n5_n">Biovita Seaweed</h3>
+                    <div class="price">₹<b id="n5_p">199</b> <span> ₹ 270 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input type="number" id="n5_q" min="1" max="1000" value="1">
+                        <span> Bottles </span>
+                    </div>
+                        <button onclick="show('n5_q','n5_n','n5_p')" class="btn">add to cart</button>
+                    </div>
+                <div class="box">
+                    <span class="discount">69% OFF</span>
+                    <img src="ALLURE-GROWTH-PROMOTER_1800x1800.png" alt="ALLURE-GROWTH-PROMOTER_1800x1800.png">
+                    <h3 id=o5_n>Allure Growth Promoters</h3>
+                    <div class="price">₹<b id="o5_p">799</b> <span> ₹ 2,650 </span> </div>
+                    <div class="quantity">
+                    <span>quantity : </span>
+                        <input type="number" id="o5_q" min="1" max="1000" value="1">
+                        <span> Bags </span>
+                    </div>
+                    <button onclick="show('o5_q','o5_n','o5_p')" class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">31% OFF</span>
+                    <img src="POTATO_1800x1800.png" alt="POTATO_1800x1800.png">
+                    <h3 id=p5_n>Amruth Potato Grow</h3>
+                    <div class="price">₹<b id="p5_p">2175</b> <span> ₹ 2,375 </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="p5_q" type="number" min="1" max="1000" value="1">
+                        <span> Cans </span>
+                    </div>
+                    <button onclick="show('p5_q','p5_n','p5_p')"class="btn">add to cart</button>
+                </div>
+                <div class="box">
+                    <span class="discount">7% OFF</span>
+                    <img src="COTTON-Grow_1800x1800.png" alt="COTTON-Grow_1800x1800.png">
+                    <h3 id=p5_n>Amruth Cotton Grow</h3>
+                    <div class="price">₹<b id="p5_p">600</b> <span> ₹ 650  </span> </div>
+                    <div class="quantity">
+                        <span>quantity : </span>
+                        <input id="p5_q" type="number" min="1" max="1000" value="1">
+                        <span> Bottles </span>
+                    </div>
+                    <button onclick="show('p5_q','p5_n','p5_p')"class="btn">add to cart</button>
+                </div>
+        </section>
+    </section>
+    <section class="footer">
+        <h1 class="credit"> created by Group No. 8 | Guided by Yogesh Bodhe Sir!                    
+        </h1>
+    </section>
+
+        <script> 
+            function show(Q,N,P,t) {
+                var q = document.getElementById(Q).value;
+                var n = document.getElementById(N).innerHTML;
+                var p = document.getElementById(P).innerHTML;
+                var t = q*p;
+                alert("Your order has been successfully received of "+q+" "+n+". Your total is: "+t);
+                }
+            </script>
+    
+    </body>
+</html>
